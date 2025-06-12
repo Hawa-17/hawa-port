@@ -1,0 +1,183 @@
+/* Genel Arkaplan */
+.app-background {
+  min-height: 100vh;
+  background: linear-gradient(to right, #d8b4fe, #a5b4fc);
+  padding: 2rem 1rem;
+  font-family: "Segoe UI", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Menü */
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.menu-item {
+  background-color: #c084fc;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+.menu-item:hover {
+  background-color: #a855f7;
+}
+.menu-item.active {
+  background-color: #9333ea;
+}
+
+/* Kart */
+.card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Resim */
+.hero-image {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  object-fit: cover;
+}
+
+/* Metinler */
+.name {
+  color: #6b21a8;
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+.title {
+  color: #374151;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+.description {
+  color: #4b5563;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+/* Bölüm başlığı */
+.section-title {
+  color: #7c3aed;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+.skills {
+  list-style: disc;
+  text-align: left;
+  margin: 0 auto 2rem;
+  max-width: 400px;
+  color: #374151;
+}
+
+/* İletişim Formu */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  max-width: 500px;
+  margin: 1.5rem auto;
+}
+.contact-form input,
+.contact-form textarea {
+  padding: 0.75rem 1rem;
+  border: 2px solid #c084fc;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: "Segoe UI", sans-serif;
+  resize: none;
+  outline: none;
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #a855f7;
+  box-shadow: 0 0 0 2px #e9d5ff;
+}
+.contact-form button {
+  background-color: #9333ea;
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 999px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.contact-form button:hover {
+  background-color: #7e22ce;
+}
+
+/* Butonlar */
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+.button {
+  background-color: #c084fc;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+}
+.button:hover {
+  background-color: #a855f7;
+}
+
+/* LinkedIn ve GitHub için özel stil (gerekirse) */
+.button.linkedin {
+  background-color: #0077b5;
+}
+.button.linkedin:hover {
+  background-color: #005a8c;
+}
+.button.github {
+  background-color: #333;
+}
+.button.github:hover {
+  background-color: #000;
+}
+
+/* Body */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #e0c3fc, #8ec5fc);
+}
+
+/* Gelişmiş responsive container (opsiyonel) */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1rem;
+}

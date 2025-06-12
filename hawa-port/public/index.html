@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Sayfa Başlığı -->
+    <title>Havva Nur Akman | Portfolyo</title>
+
+    <!-- Açıklama ve SEO -->
+    <meta name="description" content="Havva Nur Akman'ın kişisel portfolyo web sitesi." />
+    <meta name="author" content="Havva Nur Akman" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon (1).ico" type="image/png" />
+
+    <!-- Sayfa Yükleniyor ekranı için stil -->
+    <style>
+      #loader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: #ede9fe;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        font-family: sans-serif;
+        color: #6d28d9;
+        z-index: 9999;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- JavaScript devre dışıysa uyarı -->
+    <noscript>Lütfen bu uygulamayı çalıştırmak için JavaScript'i etkinleştirin.</noscript>
+
+    <!-- Yüklenme animasyonu -->
+    <div id="loader">Yükleniyor...</div>
+
+    <!-- React uygulamasının root'u -->
+    <div id="root"></div>
+
+    <!-- Yüklenme ekranını kaldır -->
+    <script>
+      window.addEventListener("load", () => {
+        const loader = document.getElementById("loader");
+        if (loader) loader.style.display = "none";
+      });
+    </script>
+  </body>
+</html>

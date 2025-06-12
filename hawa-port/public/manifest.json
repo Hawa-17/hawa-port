@@ -1,0 +1,20 @@
+{
+  "short_name": "Havva",
+  "name": "Havva Nur Akman | Portfolyo",
+  "icons": [
+    {
+      "src": "favicon(1).png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "favicon(1).png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#a78bfa",
+  "background_color": "#f5f3ff"
+}
