@@ -1,4 +1,4 @@
-/* Genel Arkaplan */
+
 .app-background {
   min-height: 100vh;
   background: linear-gradient(to right, #d8b4fe, #a5b4fc);
@@ -9,7 +9,7 @@
   align-items: center;
 }
 
-/* Menü */
+
 .menu {
   display: flex;
   flex-wrap: wrap;
@@ -36,7 +36,7 @@
   background-color: #9333ea;
 }
 
-/* Kart */
+
 .card {
   background-color: white;
   padding: 2rem;
@@ -47,7 +47,7 @@
   text-align: center;
 }
 
-/* Resim */
+
 .hero-image {
   width: 100%;
   max-width: 200px;
@@ -56,7 +56,7 @@
   object-fit: cover;
 }
 
-/* Metinler */
+
 .name {
   color: #6b21a8;
   font-size: 1.75rem;
@@ -74,7 +74,7 @@
   line-height: 1.5;
 }
 
-/* Bölüm başlığı */
+
 .section-title {
   color: #7c3aed;
   font-weight: 600;
@@ -89,7 +89,7 @@
   color: #374151;
 }
 
-/* İletişim Formu */
+
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -128,7 +128,7 @@
   background-color: #7e22ce;
 }
 
-/* Butonlar */
+
 .buttons {
   display: flex;
   justify-content: center;
@@ -152,7 +152,7 @@
   background-color: #a855f7;
 }
 
-/* LinkedIn ve GitHub için özel stil (gerekirse) */
+
 .button.linkedin {
   background-color: #0077b5;
 }
@@ -166,18 +166,57 @@
   background-color: #000;
 }
 
-/* Body */
+
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: linear-gradient(135deg, #e0c3fc, #8ec5fc);
 }
 
-/* Gelişmiş responsive container (opsiyonel) */
+
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   padding: 1rem;
+}
+@media (max-width: 768px) {
+ 
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .menu-item {
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  
+  .card {
+    padding: 1rem;
+  }
+
+  .hero-image {
+    max-width: 150px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .button {
+    width: 80%;
+    text-align: center;
+  }
+
+  /* İletişim formu */
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+  }
 }

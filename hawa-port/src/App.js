@@ -3,6 +3,7 @@ import "./App.css";
 
 function App() {
   const [activeSection, setActiveSection] = useState("Ana Sayfa");
+  
 
   return (
     <div className="app-background">
@@ -36,21 +37,28 @@ function App() {
               <h1 className="name">Havva Nur Akman</h1>
               <h2 className="title">Bilgisayar Mühendisliği Öğrencisi</h2>
               <p className="description">
-                Merhaba! Ben Havva Nur. Bilgisayar mühendisliği öğrencisiyim. Şu an için bir
-                deneyimim yok fakat front-end alanına büyük bir ilgim var ve kendimi
+                Merhaba! Ben Havva Nur. Bilgisayar mühendisliği öğrencisiyim.Şu an için bir
+                deneyimim yok fakat front-end alanına ilgim var ve kendimi
                 geliştirmek istiyorum.
               </p>
             </>
           )}
 
           {activeSection === "Ben Kimim?" && (
-            <>
-              <h2 className="section-title">Ben Kimim?</h2>
-              <p>
-                Yazılım dünyasına ilgi duyan, kendini geliştirmeyi seven ve teknolojiyle iç içe yaşamayı hedefleyen bir mühendislik öğrencisiyim.
-              </p>
-            </>
-          )}
+      <>
+         <h2 className="section-title">Ben Kimim?</h2>
+       <p>
+      21 yaşındayım ve Balıkesir'de yaşıyorum. Yazılım dünyasına ilgi duyan, kendini geliştirmeyi seven ve teknolojiyle iç içe yaşamayı hedefleyen bir mühendislik öğrencisiyim.
+      </p>
+       <p style={{ marginTop: "1rem", fontWeight: "bold" }}>
+         📧 E-posta:{" "}
+        < a href="mailto:17havva05@gmail.com" style={{ color: "#0077cc" }}>
+         17havva05@gmail.com
+       </a>
+    </p>
+  </>
+)}
+
 
           {activeSection === "Neler Yapabilirim?" && (
             <>
@@ -64,11 +72,23 @@ function App() {
           )}
 
           {activeSection === "Portfolyo" && (
-            <>
-              <h3 className="section-title">Portfolyo</h3>
-              <p>İleride buraya projelerimi ekleyeceğim.</p>
-            </>
-          )}
+  <>
+       <h3 className="section-title">Portfolyo</h3>
+    <p>
+      Çalışmalarıma burdan {" "}
+      <a
+        href="https://github.com/hawa-17?tab=repositories"
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{ color: "#0077cc", fontWeight: "bold" }}
+      >
+      ulaşabilirsiniz
+      </a>
+      .
+    </p>
+  </>
+)}
+
 
           {activeSection === "İletişim" && (
             <>
